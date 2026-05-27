@@ -1,24 +1,11 @@
-// Configuration
-const _a = atob('c2VydmljZV9renF2dWln');
-const _b = atob('dGVtcGxhdGVfOXgzZ2Rxcg==');
-const _c = atob('S0pfanNNbVN3MDdZejZLei0=');
-const EMAILJS_SERVICE_ID  = _a;
-const EMAILJS_TEMPLATE_ID = _b;
-const EMAILJS_PUBLIC_KEY  = _c;
-
-// Init EmailJS once — before DOMContentLoaded
-document.addEventListener('readystatechange', () => {
-    if (document.readyState === 'complete') emailjs.init(EMAILJS_PUBLIC_KEY);
-});
-
-// Initialize EmailJS immediately when script loads
-
+const EMAILJS_SERVICE_ID  = window._EMAILJS_CONFIG.EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = window._EMAILJS_CONFIG.EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY  = window._EMAILJS_CONFIG.EMAILJS_PUBLIC_KEY;
+emailjs.init(EMAILJS_PUBLIC_KEY);
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    /* ==========================================================================
-       INTERACTIVE CUSTOM CURSOR
-       ========================================================================== */
+    
     const cursorDot = document.getElementById('cursor-dot');
     const cursorCircle = document.getElementById('cursor-circle');
     
@@ -46,9 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('mouseleave', () => document.body.classList.remove('cursor-active'));
     });
 
-    /* ==========================================================================
-       HIGH-PERFORMANCE CANVAS PARTICLE SYSTEM
-       ========================================================================== */
+    
     const canvas = document.getElementById('particle-canvas');
     if (canvas) {
         const ctx = canvas.getContext('2d');
@@ -128,9 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loop();
     }
 
-    /* ==========================================================================
-       SCROLL-TRIGGERED REVEAL SYSTEM
-       ========================================================================== */
+    
     const revealElements = document.querySelectorAll('.scroll-reveal');
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -139,9 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     revealElements.forEach(el => revealObserver.observe(el));
 
-    /* ==========================================================================
-       LUXURY SCROLLING HEADER EFFECT
-       ========================================================================== */
+    
     const header = document.querySelector('.luxury-header');
     function checkHeaderScroll() {
         if (window.scrollY > 50) header.classList.add('scrolled');
@@ -150,9 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', checkHeaderScroll);
     checkHeaderScroll();
 
-    /* ==========================================================================
-       MOBILE NAVIGATION OVERLAY MENU
-       ========================================================================== */
+    
     const navToggle = document.getElementById('nav-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuLinks = document.querySelectorAll('.mobile-link, .mobile-link-btn');
@@ -171,9 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* ==========================================================================
-       TACTILE 3D CARD TILT & REFLECTION SHEEN EFFECT
-       ========================================================================== */
+    
     const tiltCards = document.querySelectorAll('[class*="3d-card"]');
     tiltCards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
@@ -196,9 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ==========================================================================
-       DYNAMIC PROJECT PORTFOLIO FILTER
-       ========================================================================== */
+    
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card-wrapper');
     filterButtons.forEach(btn => {
@@ -218,14 +193,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ==========================================================================
-       CONTACT FORM — EmailJS Integration
-       ========================================================================== */
+    
     const contactForm = document.getElementById('contact-form');
     const formSuccessOverlay = document.getElementById('form-success');
     const successCloseBtn = document.getElementById('success-close');
-
-    // EmailJS config loaded from config.js (not committed to GitHub)
 
     
 
