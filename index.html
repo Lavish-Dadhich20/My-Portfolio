@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavish Dadhich | AI Integrator & Full-Stack Developer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Portfolio of Lavish Dadhich, B.Tech CSE student specializing in Full-Stack Web Development, Generative AI integration, and Agentic Systems. Explore AI projects, store systems, and machine learning pipelines.">
+    <meta name="keywords" content="Lavish Dadhich, AI Integrator, Full-Stack Developer, Agentic AI, SmartLoan AI, Geetanjali Institute of Technical Studies, B.Tech CSE, Udaipur, Web Developer, Portfolio">
+    <meta name="author" content="Lavish Dadhich">
+    
+    <!-- OpenGraph Metadata for Sharing -->
+    <meta property="og:title" content="Lavish Dadhich | AI Integrator & Full-Stack Developer">
+    <meta property="og:description" content="Explore the portfolio of Lavish Dadhich. Specializing in Generative AI, Full-Stack Web Apps, and Machine Learning pipelines.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Luxury Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Ambient Glowing Blobs -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-circle" id="cursor-circle"></div>
+
+    <!-- Navigation Header -->
+    <header class="luxury-header">
+        <div class="nav-container">
+            <a href="#" class="logo-link cursor-hover">
+                <span class="logo-text-gold">L</span>AVISH <span class="logo-text-gold">D</span>ADHICH<span class="logo-text-dot">.</span>
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link cursor-hover">About</a></li>
+                    <li><a href="#projects" class="nav-link cursor-hover">Projects</a></li>
+                    <li><a href="#skills" class="nav-link cursor-hover">Skills</a></li>
+                    <li><a href="#experience" class="nav-link cursor-hover">Journey</a></li>
+                    <li><a href="#contact" class="nav-btn cursor-hover">Let's Connect</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle cursor-hover" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Screen Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-menu-links">
+            <a href="#about" class="mobile-link cursor-hover">About</a>
+            <a href="#projects" class="mobile-link cursor-hover">Projects</a>
+            <a href="#skills" class="mobile-link cursor-hover">Skills</a>
+            <a href="#experience" class="mobile-link cursor-hover">Journey</a>
+            <a href="#contact" class="mobile-link-btn cursor-hover">Let's Connect</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge-container scroll-reveal">
+                        <span class="gold-badge"><span class="badge-dot"></span>Available for Freelance & Collaborations</span>
+                    </div>
+                    <h1 class="hero-title scroll-reveal">
+                        <span class="playfair-title">Crafting the Future of</span> 
+                        <span class="gradient-text">Agentic AI &</span> 
+                        <span class="playfair-title italic-serif">Elegant Web Systems</span>
+                    </h1>
+                    <p class="hero-description scroll-reveal">
+                        I am a Computer Science Engineering student based in Udaipur, India, specializing in building high-end, intelligent web systems, LLM-powered autonomous chatbots, and data-driven architectures.
+                    </p>
+                    <div class="hero-cta scroll-reveal">
+                        <a href="#projects" class="btn-primary cursor-hover">View Masterpieces</a>
+                        <a href="#contact" class="btn-secondary cursor-hover">Inquire Now</a>
+                    </div>
+                    
+                    <!-- Micro Stats Cards -->
+                    <div class="hero-stats scroll-reveal">
+                        <div class="stat-card">
+                            <span class="stat-number">8.7</span>
+                            <span class="stat-label">CGPA (B.Tech CSE)</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Production Systems</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Dedicated Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual scroll-reveal">
+                    <div class="hero-visual-container">
+                        
+                        <!-- Premium Background Glow Halo -->
+                        <div class="hero-visual-glow"></div>
+                        
+                        <!-- Back Floating Code Card (HUD Style) -->
+                        <div class="visual-card-glass shifted-back">
+                            <div class="card-inner-shine"></div>
+                            <div class="card-header">
+                                <div class="circles-row">
+                                    <span class="circle red"></span>
+                                    <span class="circle yellow"></span>
+                                    <span class="circle green"></span>
+                                </div>
+                                <span class="card-title-file">core_metrics.json</span>
+                            </div>
+                            <div class="card-code-body">
+                                <pre><code><span class="code-keyword">const</span> engine = {
+  gpa: <span class="code-string">"8.7 CGPA"</span>,
+  focus: <span class="code-string">"Agentic AI"</span>,
+  stack: <span class="code-string">"MERN + Python"</span>,
+  status: <span class="code-string">"Innovating"</span>
+};</code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Front Glassmorphic Profile Photo Card -->
+                        <div class="profile-card-glass 3d-card" data-tilt>
+                            <div class="card-inner-shine"></div>
+                            
+                            
+                            <div class="profile-image-wrap">
+                                <!-- Default background avatar shown if actual profile image not found -->
+                                <div class="profile-avatar-fallback">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="url(#gold-gradient-avatar)" stroke-width="1.2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                        <defs>
+                                            <linearGradient id="gold-gradient-avatar" x1="4" y1="7" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#d4af37"/>
+                                                <stop offset="1" stop-color="#f3e096"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <img src="profile.png" alt="Lavish Dadhich" onerror="this.style.opacity='0';">
+                            </div>
+                            <div class="profile-card-badge">
+                                <span>Lavish Dadhich</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down-arrow cursor-hover">
+                <span>Explore Profile</span>
+                <svg class="chevron-down" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 9L12 15L18 9" stroke="url(#gold-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="gold-gradient" x1="6" y1="9" x2="18" y2="15" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#d4af37"/>
+                            <stop offset="1" stop-color="#f3e096"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="section-title-wrap scroll-reveal">
+                    <span class="section-subtitle">ABOUT ME</span>
+                    <h2 class="section-title">Integrating Intelligence <br>with <span class="gradient-text">Exceptional Web Experiences</span></h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text-content scroll-reveal">
+                        <p class="about-lead">
+                            I merge B.Tech Computer Science core disciplines with bleeding-edge Generative AI practices. Currently studying at Geetanjali Institute of Technical Studies, I am passionate about creating autonomous systems that act intelligently and load seamlessly.
+                        </p>
+                        <p class="about-body">
+                            My journey is fueled by a profound curiosity for algorithmic problem-solving (DSA) and building practical solutions. From designing conversational multi-turn AI assistants to implementing highly responsive database architectures, I strive to make every line of code impactful, visually spectacular, and structurally robust.
+                        </p>
+                        <div class="about-key-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Modern Tech Stack</h4>
+                                    <p>Node.js, Express, MongoDB, REST APIs, and core JS/Python.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Agentic AI Systems</h4>
+                                    <p>Harnessing LLM endpoints, Ollama, and agent reasoning structures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cards-layout scroll-reveal">
+                        <div class="quick-facts-glass">
+                            <h3>Quick Highlights</h3>
+                            <ul class="facts-list">
+                                <li>
+                                    <span class="fact-title">Education</span>
+                                    <span class="fact-value">B.Tech CSE (2024 - 2028)</span>
+                                </li>
+                                <li>
+                                    <span class="fact-title">Location</span>
+                                    <span class="fact-value">Udaipur, Rajasthan, India</span>
+                                </li>
+                                <li>
+                                    <span class="fact-title">Specialization</span>
+                                    <span class="fact-value">AI Integration / Full-Stack</span>
+                                </li>
+                                <li>
+                                    <span class="fact-title">Core Principles</span>
+                                    <span class="fact-value">Optimal DSA, Clean UX, Extensibility</span>
+                                </li>
+                            </ul>
+                            <div class="gold-gradient-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section class="projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-title-wrap scroll-reveal">
+                    <span class="section-subtitle">MY MASTERPIECES</span>
+                    <h2 class="section-title">Engineered <span class="gradient-text">Platforms & AI Systems</span></h2>
+                </div>
+
+                <!-- Projects Dynamic Filter -->
+                <div class="projects-filter-bar scroll-reveal">
+                    <button class="filter-btn active cursor-hover" data-filter="all">All Masterpieces</button>
+                    <button class="filter-btn cursor-hover" data-filter="ai">Agentic / ML Systems</button>
+                    <button class="filter-btn cursor-hover" data-filter="web">Full-Stack Web</button>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 (SmartLoan AI) -->
+                    <div class="project-card-wrapper scroll-reveal" data-category="ai">
+                        <div class="project-card 3d-card" data-tilt>
+                            <div class="project-glow"></div>
+                            <div class="project-header">
+                                <span class="project-year">2025</span>
+                                <div class="project-links">
+                                    <a href="https://github.com/Lavish-Dadhich20" target="_blank" class="project-link-icon cursor-hover" aria-label="GitHub Repository">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-tags">
+                                    <span class="project-tag">Agentic AI</span>
+                                    <span class="project-tag">LLM Integration</span>
+                                    <span class="project-tag">Node.js</span>
+                                </div>
+                                <h3 class="project-title">SmartLoan AI</h3>
+                                <p class="project-desc">
+                                    An intelligent, agentic loan processing assistant that automatically processes end-to-end eligibility verification, computes accurate EMI amortization tables, and conducts multi-turn user conversational reviews. Highly reduced manual review cycles.
+                                </p>
+                                <div class="project-footer">
+                                    <span class="project-tech-stack">Tech Stack: HTML, CSS, JS, Node.js, AI APIs</span>
+                                    <span class="arrow-indicator">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Store Invoice & Sales) -->
+                    <div class="project-card-wrapper scroll-reveal" data-category="web">
+                        <div class="project-card 3d-card" data-tilt>
+                            <div class="project-glow"></div>
+                            <div class="project-header">
+                                <span class="project-year">2024</span>
+                                <div class="project-links">
+                                    <a href="https://github.com/Lavish-Dadhich20" target="_blank" class="project-link-icon cursor-hover" aria-label="GitHub Repository">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-tags">
+                                    <span class="project-tag">Full-Stack</span>
+                                    <span class="project-tag">MongoDB</span>
+                                    <span class="project-tag">Analytics</span>
+                                </div>
+                                <h3 class="project-title">Store Invoice & Sales System</h3>
+                                <p class="project-desc">
+                                    A robust, production-ready system managing catalog inventories, instantaneous beautiful invoice generation, and tracking multi-mode transactions (cash, online, credit). Displays real-time operational dashboard analytics backed by MongoDB modeling.
+                                </p>
+                                <div class="project-footer">
+                                    <span class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript, Node.js, MongoDB</span>
+                                    <span class="arrow-indicator">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (AI Fraud Detection) -->
+                    <div class="project-card-wrapper scroll-reveal" data-category="ai">
+                        <div class="project-card 3d-card" data-tilt>
+                            <div class="project-glow"></div>
+                            <div class="project-header">
+                                <span class="project-year">2026</span>
+                                <div class="project-links">
+                                    <a href="https://github.com/Lavish-Dadhich20" target="_blank" class="project-link-icon cursor-hover" aria-label="GitHub Repository">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-tags">
+                                    <span class="project-tag">Machine Learning</span>
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">Anomalies</span>
+                                </div>
+                                <h3 class="project-title">AI Fraud Detection Pipeline</h3>
+                                <p class="project-desc">
+                                    A high-performing machine learning system engineered to flag fraudulent transactions using anomaly patterns. Implemented ensemble models (Random Forest, XGBoost), SMOTE balancing techniques, and refined precision-recall curves across datasets.
+                                </p>
+                                <div class="project-footer">
+                                    <span class="project-tech-stack">Tech Stack: Python, Scikit-Learn, Pandas, NumPy</span>
+                                    <span class="arrow-indicator">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="section-container">
+                <div class="section-title-wrap scroll-reveal">
+                    <span class="section-subtitle">EXPERTISE</span>
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills Arsenal</span></h2>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <!-- Languages -->
+                    <div class="skill-category-card scroll-reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5L4 4.9C4 3.86 4.9 3 6 3H20M9 7h9M9 11h9"/></svg>
+                            </span>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Python</span><span class="skill-strength gold-glow">Advanced</span></li>
+                            <li><span class="skill-name">JavaScript</span><span class="skill-strength gold-glow">Highly Proficient</span></li>
+                            <li><span class="skill-name">C / C++</span><span class="skill-strength muted">Academic</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skill-category-card scroll-reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </span>
+                            <h3>Web & Core Tech</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Node.js / Express</span><span class="skill-strength gold-glow">Robust Full-Stack</span></li>
+                            <li><span class="skill-name">MongoDB</span><span class="skill-strength gold-glow">Data Modeling</span></li>
+                            <li><span class="skill-name">HTML5 / CSS3</span><span class="skill-strength">Modern Styling</span></li>
+                            <li><span class="skill-name">REST APIs</span><span class="skill-strength">Secure Endpoints</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- AI & ML -->
+                    <div class="skill-category-card scroll-reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </span>
+                            <h3>Agentic AI & ML</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Agentic AI Patterns</span><span class="skill-strength gold-glow">Core Focus</span></li>
+                            <li><span class="skill-name">Generative AI Models</span><span class="skill-strength">APIs / Ollama</span></li>
+                            <li><span class="skill-name">NumPy & Pandas</span><span class="skill-strength">Data Pipelines</span></li>
+                            <li><span class="skill-name">ML Fundamentals</span><span class="skill-strength">Scikit-Learn</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category-card scroll-reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                            </span>
+                            <h3>Developer Ecosystem</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Git & GitHub</span><span class="skill-strength">Collaborative Git</span></li>
+                            <li><span class="skill-name">Docker</span><span class="skill-strength">Containerization</span></li>
+                            <li><span class="skill-name">VS Code / Dev Tools</span><span class="skill-strength">Optimal Workflow</span></li>
+                            <li><span class="skill-name">Problem-Solving</span><span class="skill-strength gold-glow">DSA / Analytics</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Timeline -->
+        <section class="experience-section" id="experience">
+            <div class="section-container">
+                <div class="section-title-wrap scroll-reveal">
+                    <span class="section-subtitle">THE CHRONOLOGY</span>
+                    <h2 class="section-title">Academic & <span class="gradient-text">Achievement Journey</span></h2>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1: B.Tech -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot-gold"></div>
+                        <div class="timeline-date">Aug 2024 - May 2028</div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-card-tag">Education</span>
+                            <h3>B.Tech in Computer Science Engineering</h3>
+                            <h4 class="timeline-institution">Geetanjali Institute of Technical Studies, Udaipur (RTU)</h4>
+                            <p class="timeline-card-desc">
+                                Pursuing core computer science disciplines with intensive focus on Data Structures & Algorithms, Systems Architecture, Database Management, and Artificial Intelligence. Currently maintaining a high scholastic standing.
+                            </p>
+                            <div class="timeline-metric-glow">CGPA: 8.7 / 10.0</div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: SmartLoan Deployment -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot-purple"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-card-tag highlight-purple">Achievement</span>
+                            <h3>Autonomous System Deployment</h3>
+                            <h4 class="timeline-institution">Self-Driven Initiative</h4>
+                            <p class="timeline-card-desc">
+                                Successfully delivered and deployed a production-grade AI-integrated loan system (SmartLoan AI) as a first-year undergraduate student. Demonstrated rapid autonomous learning, exceeding typical coursework boundaries.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: Certifications -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot-gold"></div>
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-card-tag">Credentials</span>
+                            <h3>Professional Accreditations</h3>
+                            <div class="certifications-grid-list">
+                                <div class="cert-badge">
+                                    <span class="cert-name">Intermediate JavaScript</span>
+                                    <span class="cert-issuer">HackerRank • 2024</span>
+                                </div>
+                                <div class="cert-badge">
+                                    <span class="cert-name">Basic CSS</span>
+                                    <span class="cert-issuer">HackerRank • 2024</span>
+                                </div>
+                                <div class="cert-badge">
+                                    <span class="cert-name">Gen AI Study Jams</span>
+                                    <span class="cert-issuer">Google Developer Groups • 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: Hackathons -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot-purple"></div>
+                        <div class="timeline-date">Ongoing</div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-card-tag highlight-purple">Activities</span>
+                            <h3>Hackathons & Prototyping</h3>
+                            <h4 class="timeline-institution">Developer Communities</h4>
+                            <p class="timeline-card-desc">
+                                Active hackathon competitor. Regularly constructing fully operational prototypes, designing databases, and integrating LLM solutions within hyper-competitive, time-constrained project environments.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="contact-grid">
+                    
+                    <div class="contact-info-wrap scroll-reveal">
+                        <span class="section-subtitle">CONNECT</span>
+                        <h2 class="section-title">Initiate a <br><span class="gradient-text">Collaboration</span></h2>
+                        <p class="contact-lead-text">
+                            Whether you need an intelligent agentic pipeline, a highly optimized full-stack web application, or a committed developer to join your technical team, let's craft something exceptional.
+                        </p>
+                        
+                        <div class="contact-details-list">
+                            
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lavishdadhich20@gmail.com" target="_blank" class="contact-item cursor-hover">
+                                <div class="contact-icon-box">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span>Mail Me Directly</span>
+                                    <strong>lavishdadhich20@gmail.com</strong>
+                                </div>
+                            </a>
+
+                            <a href="tel:+918769590400" class="contact-item cursor-hover">
+                                <div class="contact-icon-box">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span>Call / WhatsApp</span>
+                                    <strong>+91 8769590400</strong>
+                                </div>
+                            </a>
+
+                            <div class="contact-item">
+                                <div class="contact-icon-box">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span>Operational Base</span>
+                                    <strong>Udaipur, Rajasthan, India</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Social Handles Icons -->
+                        <div class="social-circles-row">
+                            <a href="https://github.com/Lavish-Dadhich20" target="_blank" class="social-circle cursor-hover" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/lavish-dadhich" target="_blank" class="social-circle cursor-hover" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Premium Glass Inquiry Form -->
+                    <div class="contact-form-wrap scroll-reveal">
+                        <div class="form-container-glass">
+                            <h3 class="form-header">Secure Project Brief</h3>
+                            <form id="contact-form" autocomplete="off">
+                                <div class="form-group">
+                                    <input type="text" id="user-name" name="name" required placeholder=" " class="form-input cursor-hover">
+                                    <label for="user-name" class="form-label">Full Name</label>
+                                    <span class="input-line-glow"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="user-email" name="email" required placeholder=" " class="form-input cursor-hover">
+                                    <label for="user-email" class="form-label">Email Address</label>
+                                    <span class="input-line-glow"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="user-subject" name="subject" required placeholder=" " class="form-input cursor-hover">
+                                    <label for="user-subject" class="form-label">Project Domain</label>
+                                    <span class="input-line-glow"></span>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="user-message" name="message" required placeholder=" " rows="4" class="form-textarea cursor-hover"></textarea>
+                                    <label for="user-message" class="form-label">Project Overview / Description</label>
+                                    <span class="input-line-glow"></span>
+                                </div>
+                                <button type="submit" class="submit-btn cursor-hover" id="form-submit">
+                                    <span>Transmit Message</span>
+                                    <svg class="submit-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </button>
+                            </form>
+                            
+                            <!-- Form Success Overlay -->
+                            <div class="form-success-overlay" id="form-success">
+                                <div class="success-content">
+                                    <div class="success-icon-circle">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </div>
+                                    <h3>Transmission Successful</h3>
+                                    <p>Your project brief has been successfully received, Lavish. I will review and reply within 12 hours.</p>
+                                    <button class="btn-success-reset cursor-hover" id="success-close">New Connection</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Luxury Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo">LAVISH DADHICH<span class="logo-text-dot">.</span></span>
+                <p>Delivering high-end software solutions at the intersection of full-stack engineering and intelligent machine systems.</p>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Lavish Dadhich. Designed for ultimate premium excellence.</p>
+                <div class="footer-links">
+                    <a href="#about" class="cursor-hover">Profile</a>
+                    <a href="#projects" class="cursor-hover">Projects</a>
+                    <a href="#skills" class="cursor-hover">Skills</a>
+                    <a href="#experience" class="cursor-hover">Chronology</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK (required for contact form) -->
+
+    <!-- JavaScripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
