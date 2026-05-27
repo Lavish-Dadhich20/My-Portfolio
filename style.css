@@ -1,10 +1,5 @@
-/* ==========================================================================
-   LUXURY DESIGN SYSTEM - LAVISH DADHICH PORTFOLIO
-   ========================================================================== */
-
-/* Design Tokens & Variables */
 :root {
-    /* Color Palette - Obsidian, Luxury Gold, and Cosmic Indigo */
+    
     --bg-deep: #060709;
     --bg-surface: #0c0e12;
     --bg-surface-card: rgba(15, 17, 22, 0.65);
@@ -29,17 +24,17 @@
     --border-glass: rgba(255, 255, 255, 0.05);
     --border-gold-subtle: rgba(212, 175, 55, 0.15);
     
-    /* Typography */
+    
     --font-heading: 'Outfit', sans-serif;
     --font-serif: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
 
-    /* Shadows & Glows */
+    
     --glow-gold: 0 0 20px rgba(212, 175, 55, 0.15);
     --glow-purple: 0 0 20px rgba(99, 102, 241, 0.2);
     --shadow-luxury: 0 20px 40px rgba(0, 0, 0, 0.6);
     
-    /* Curves & Speed */
+    
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
@@ -47,12 +42,11 @@
     --transition-cursor: all 0.1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Base Styles & Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none; /* Hide default browser cursor for custom interactive cursor */
+    cursor: none; 
 }
 
 html {
@@ -70,7 +64,6 @@ body {
     min-height: 100vh;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -86,7 +79,6 @@ body {
     background: rgba(212, 175, 55, 0.5);
 }
 
-/* Typography Presets */
 h1, h2, h3, h4, h5 {
     font-family: var(--font-heading);
     font-weight: 700;
@@ -116,10 +108,6 @@ p {
 .italic-serif {
     font-style: italic;
 }
-
-/* ==========================================================================
-   AMBIENT GLOWS & BACKGROUND LAYERS
-   ========================================================================== */
 
 #particle-canvas {
     position: fixed;
@@ -166,10 +154,6 @@ p {
     background: radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, transparent 70%);
 }
 
-/* ==========================================================================
-   CUSTOM CURSOR
-   ========================================================================== */
-
 .custom-cursor-dot {
     width: 8px;
     height: 8px;
@@ -194,7 +178,6 @@ p {
     transition: var(--transition-cursor), width 0.3s ease, height 0.3s ease, border 0.3s ease, background 0.3s ease;
 }
 
-/* Custom Cursor Hover States */
 .cursor-active .custom-cursor-dot {
     background: var(--purple-light);
     width: 6px;
@@ -208,14 +191,9 @@ p {
     background: rgba(99, 102, 241, 0.08);
 }
 
-/* Hide default cursor on interactive items */
 a, button, input, textarea, select, .cursor-hover {
     cursor: none !important;
 }
-
-/* ==========================================================================
-   LUXURY NAVIGATION
-   ========================================================================== */
 
 .luxury-header {
     position: fixed;
@@ -324,7 +302,6 @@ a, button, input, textarea, select, .cursor-hover {
     border-color: var(--gold-primary);
 }
 
-/* Mobile Nav Toggle Icon */
 .mobile-nav-toggle {
     display: none;
     flex-direction: column;
@@ -356,7 +333,6 @@ a, button, input, textarea, select, .cursor-hover {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Mobile Screen Menu */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -413,10 +389,6 @@ a, button, input, textarea, select, .cursor-hover {
     transition: var(--transition-smooth);
     margin-top: 1rem;
 }
-
-/* ==========================================================================
-   HERO SECTION
-   ========================================================================== */
 
 .hero-section {
     min-height: 100vh;
@@ -574,7 +546,6 @@ a, button, input, textarea, select, .cursor-hover {
     margin-top: 0.25rem;
 }
 
-/* Hero 3D Code Visual Card */
 .visual-card-glass {
     position: relative;
     background: var(--bg-surface-card);
@@ -659,7 +630,6 @@ a, button, input, textarea, select, .cursor-hover {
     pointer-events: none;
 }
 
-/* Overlapping Dual Card visual container */
 .hero-visual-container {
     position: relative;
     width: 100%;
@@ -669,7 +639,6 @@ a, button, input, textarea, select, .cursor-hover {
     align-items: center;
 }
 
-/* Background Luxury Glow behind cards */
 .hero-visual-glow {
     position: absolute;
     width: 250px;
@@ -709,7 +678,6 @@ a, button, input, textarea, select, .cursor-hover {
     box-shadow: 0 35px 70px rgba(0, 0, 0, 0.85), 0 0 40px rgba(212, 175, 55, 0.15);
 }
 
-/* 3D Popping Glass Badges */
 .parallax-badge {
     position: absolute;
     background: rgba(12, 14, 18, 0.65);
@@ -735,14 +703,14 @@ a, button, input, textarea, select, .cursor-hover {
 .badge-top {
     top: 2rem;
     right: -2rem;
-    transform: translateZ(50px); /* Lifts badge 50px off surface */
+    transform: translateZ(50px); 
     border-color: var(--border-gold-subtle);
 }
 
 .badge-bottom {
     bottom: 3.5rem;
     left: -2.5rem;
-    transform: translateZ(40px); /* Lifts badge 40px off surface */
+    transform: translateZ(40px); 
     border-color: rgba(99, 102, 241, 0.25);
 }
 
@@ -806,7 +774,7 @@ a, button, input, textarea, select, .cursor-hover {
     position: absolute;
     bottom: -1rem;
     left: 50%;
-    transform: translateX(-50%) translateZ(30px); /* Pop out label */
+    transform: translateX(-50%) translateZ(30px); 
     background: linear-gradient(135deg, rgba(12,14,18,0.9) 0%, rgba(6,7,9,0.9) 100%);
     border: 1px solid var(--border-gold-subtle);
     padding: 0.5rem 1.5rem;
@@ -822,7 +790,6 @@ a, button, input, textarea, select, .cursor-hover {
     z-index: 5;
 }
 
-/* Shifted Back HUD Code Card layout styling (Positioned beautifully at Top Right) */
 .visual-card-glass.shifted-back {
     position: absolute;
     width: 290px;
@@ -830,7 +797,7 @@ a, button, input, textarea, select, .cursor-hover {
     transform: translate(65px, -55px) scale(0.9) rotate(2.5deg);
     opacity: 0.65;
     z-index: 1;
-    pointer-events: none; /* Mouse movements bypass to photo card */
+    pointer-events: none; 
     transition: var(--transition-smooth);
     border-color: rgba(255, 255, 255, 0.03);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -843,7 +810,6 @@ a, button, input, textarea, select, .cursor-hover {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
 }
 
-/* Scroll Arrow Link */
 .scroll-down-arrow {
     position: absolute;
     bottom: 2rem;
@@ -873,10 +839,6 @@ a, button, input, textarea, select, .cursor-hover {
     40% { transform: translateY(-8px); }
     60% { transform: translateY(-4px); }
 }
-
-/* ==========================================================================
-   GLOBAL SECTION CONTAINER STYLING
-   ========================================================================== */
 
 section {
     position: relative;
@@ -912,10 +874,6 @@ section {
     font-family: var(--font-serif);
     font-weight: 400;
 }
-
-/* ==========================================================================
-   ABOUT SECTION
-   ========================================================================== */
 
 .about-grid {
     display: grid;
@@ -1035,10 +993,6 @@ section {
     background: var(--gold-gradient);
 }
 
-/* ==========================================================================
-   PROJECTS SECTION
-   ========================================================================== */
-
 .projects-filter-bar {
     display: flex;
     justify-content: center;
@@ -1081,7 +1035,6 @@ section {
     transition: var(--transition-smooth);
 }
 
-/* Hide animation during filtering */
 .project-card-wrapper.hide {
     opacity: 0;
     transform: scale(0.9);
@@ -1225,10 +1178,6 @@ section {
     transform: translateX(4px);
 }
 
-/* ==========================================================================
-   TECHNICAL SKILLS SECTION
-   ========================================================================== */
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -1319,10 +1268,6 @@ section {
 .skill-strength.muted {
     color: var(--text-muted);
 }
-
-/* ==========================================================================
-   JOURNEY / TIMELINE SECTION
-   ========================================================================== */
 
 .timeline-wrapper {
     position: relative;
@@ -1475,7 +1420,6 @@ section {
     border-radius: var(--radius-sm);
 }
 
-/* Certifications Layout Inside timeline */
 .certifications-grid-list {
     display: flex;
     flex-direction: column;
@@ -1509,10 +1453,6 @@ section {
     color: var(--text-muted);
     margin-top: 0.25rem;
 }
-
-/* ==========================================================================
-   CONTACT SECTION
-   ========================================================================== */
 
 .contact-grid {
     display: grid;
@@ -1621,7 +1561,6 @@ section {
     transform: translateY(-3px);
 }
 
-/* Glassmorphic Form Container */
 .form-container-glass {
     position: relative;
     background: var(--bg-surface-card);
@@ -1675,7 +1614,6 @@ section {
     transition: var(--transition-smooth);
 }
 
-/* Floating Label Triggers */
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown) ~ .form-label,
 .form-textarea:focus ~ .form-label,
@@ -1740,7 +1678,6 @@ section {
     transform: translateX(4px);
 }
 
-/* Form Success Overlay */
 .form-success-overlay {
     position: absolute;
     top: 0;
@@ -1819,10 +1756,6 @@ section {
     color: var(--gold-light);
 }
 
-/* ==========================================================================
-   FOOTER STYLING
-   ========================================================================== */
-
 .luxury-footer {
     position: relative;
     z-index: 2;
@@ -1894,10 +1827,6 @@ section {
     color: var(--gold-primary);
 }
 
-/* ==========================================================================
-   SCROLL REVEAL STYLES (INTERSECTION OBSERVER)
-   ========================================================================== */
-
 .scroll-reveal {
     opacity: 0;
     transform: translateY(35px);
@@ -1909,18 +1838,12 @@ section {
     transform: translateY(0);
 }
 
-/* Stagger delays for beautiful sequential entry */
 .scroll-reveal:nth-child(1) { transition-delay: 0.05s; }
 .scroll-reveal:nth-child(2) { transition-delay: 0.12s; }
 .scroll-reveal:nth-child(3) { transition-delay: 0.18s; }
 .scroll-reveal:nth-child(4) { transition-delay: 0.24s; }
 .scroll-reveal:nth-child(5) { transition-delay: 0.3s; }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN MEDIA QUERIES
-   ========================================================================== */
-
-/* Large Tablets & Small Desktops (1024px) */
 @media (max-width: 1024px) {
     html {
         font-size: 15px;
@@ -1978,7 +1901,6 @@ section {
     }
 }
 
-/* Medium Tablets & Mobile Toggles (768px) */
 @media (max-width: 768px) {
     section {
         padding: 6rem 0;
@@ -2025,7 +1947,6 @@ section {
     }
 }
 
-/* Small Phones (480px) */
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2.4rem;
